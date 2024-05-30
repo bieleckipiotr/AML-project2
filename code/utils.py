@@ -1,10 +1,11 @@
 import json
+import time
 from itertools import product
 
 import numpy as np
 import pandas as pd
-from sklearn.base import accuracy_score
 from sklearn.discriminant_analysis import StandardScaler
+from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 
 
@@ -55,6 +56,54 @@ def save_results(results, filename):
 
 
 def experiment(
+    X,
+    y,
+    fs_cls,
+    fs_kwargs,
+    clf_cls,
+    clf_kwargs,
+    n_features,
+    k_param_name,
+    requires_estimator,
+    train_test_seeds,
+):
+    # Run experiment
+    start = time.time()
+    accs, accs_top_20pc = _experiment_internal(
+        X,
+        y,
+        fs_cls,
+        fs_kwargs,
+        clf_cls,
+        clf_kwargs,
+        n_features,
+        k_param_name,
+        requires_estimator,
+        train_test_seeds,
+    )
+    elapsed = time.time() - start
+    elapsed = elapsed / len(train_test_seeds)
+
+    acc = accs.mean()
+    acc_std = accs.std()
+    acc_top_20pc = accs_top_20pc.mean()
+
+    result = (
+        fs_cls.__name__,
+        get_params_json(fs_kwargs),
+        clf_cls.__name__,
+        get_params_json(clf_kwargs),
+        n_features,
+        acc,
+        acc_std,
+        acc_top_20pc,
+        elapsed,
+    )
+
+    return result
+
+
+def _experiment_internal(
     X,
     y,
     fs_cls,
