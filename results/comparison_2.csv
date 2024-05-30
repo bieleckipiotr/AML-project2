@@ -61,3 +61,14 @@ SelectFromModel,{'threshold': -Infinity},GradientBoostingClassifier,"{'n_estimat
 SelectFromModel,{'threshold': -Infinity},GradientBoostingClassifier,"{'n_estimators': 100, 'learning_rate': 0.1, 'subsample': 0.5}",18,0.6861999999999999,0.010361467077590867,0.7529999999999999,34.27208433151245
 SelectFromModel,{'threshold': -Infinity},GradientBoostingClassifier,"{'n_estimators': 100, 'learning_rate': 0.1, 'subsample': 0.5}",19,0.6821999999999999,0.008749857141690898,0.7569999999999999,39.88489217758179
 SelectFromModel,{'threshold': -Infinity},GradientBoostingClassifier,"{'n_estimators': 100, 'learning_rate': 0.1, 'subsample': 0.5}",20,0.6852,0.011461239025515487,0.776,40.78951568603516
+SelectFromModel,{'threshold': -Infinity},XGBClassifier,{},1,0.4932,0.01384774349849102,0.49399999999999994,6.150450134277344
+SelectFromModel,{'threshold': -Infinity},XGBClassifier,{'device': 'cuda'},1,0.5356,0.022508664998173465,0.58,2.738766002655029
+SelectFromModel,{'threshold': -Infinity},XGBClassifier,{'device': 'cuda'},2,0.546,0.017515707236649036,0.594,2.976771831512451
+SelectFromModel,{'threshold': -Infinity},XGBClassifier,{'device': 'cuda'},3,0.562,0.027949955277245055,0.641,3.132274293899536
+SelectFromModel,{'threshold': -Infinity},XGBClassifier,{'device': 'cuda'},4,0.5900000000000001,0.03389395226290375,0.6890000000000001,2.9012763500213623
+SelectFromModel,{'threshold': -Infinity},XGBClassifier,{'device': 'cuda'},5,0.6097999999999999,0.027534705373401063,0.681,2.728695440292358
+SelectFromModel,{'threshold': -Infinity},XGBClassifier,{'device': 'cuda'},6,0.6144000000000001,0.01177454882362803,0.6950000000000001,2.7070542335510255
+SelectFromModel,{'threshold': -Infinity},XGBClassifier,{'device': 'cuda'},7,0.6318,0.013876599006961336,0.705,2.7419901847839356
+SelectFromModel,{'threshold': -Infinity},XGBClassifier,{'device': 'cuda'},8,0.6424000000000001,0.007657675887630664,0.704,2.703707218170166
+SelectFromModel,{'threshold': -Infinity},XGBClassifier,{'device': 'cuda'},9,0.6456,0.01575563391298492,0.7070000000000001,2.753081750869751
+SelectFromModel,{'threshold': -Infinity},XGBClassifier,{'device': 'cuda'},10,0.6436,0.024791934172226276,0.728,2.9069538593292235
