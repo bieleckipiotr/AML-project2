@@ -1,0 +1,8 @@
+feature_selector,feature_selector_params,classifier,classifier_params,n_features,accuracy,accuracy_std,accuracy_top_20pc,elapsed_time
+SelectFromModel,{'threshold': -Infinity},GradientBoostingClassifier,"{'n_estimators': 100, 'learning_rate': 0.1, 'subsample': 0.5}",15,0.6876,0.013154466921924237,0.7620000000000001,35.14980263710022
+SelectFromModel,{'threshold': -Infinity},GradientBoostingClassifier,"{'n_estimators': 100, 'learning_rate': 0.1, 'subsample': 1}",15,0.6878,0.006675327707311418,0.76,89.06531052589416
+SelectFromModel,{'threshold': -Infinity},GradientBoostingClassifier,"{'n_estimators': 100, 'learning_rate': 0.1, 'subsample': 0.5}",16,0.6908000000000001,0.0035999999999999565,0.772,33.728306674957274
+SelectFromModel,{'threshold': -Infinity},GradientBoostingClassifier,"{'n_estimators': 100, 'learning_rate': 0.1, 'subsample': 0.5}",17,0.6779999999999999,0.00782304288624315,0.764,34.46548132896423
+SelectFromModel,{'threshold': -Infinity},GradientBoostingClassifier,"{'n_estimators': 100, 'learning_rate': 0.1, 'subsample': 0.5}",18,0.6861999999999999,0.010361467077590867,0.7529999999999999,34.27208433151245
+SelectFromModel,{'threshold': -Infinity},GradientBoostingClassifier,"{'n_estimators': 100, 'learning_rate': 0.1, 'subsample': 0.5}",19,0.6821999999999999,0.008749857141690898,0.7569999999999999,39.88489217758179
+SelectFromModel,{'threshold': -Infinity},GradientBoostingClassifier,"{'n_estimators': 100, 'learning_rate': 0.1, 'subsample': 0.5}",20,0.6852,0.011461239025515487,0.776,40.78951568603516
